@@ -121,7 +121,7 @@ header {
     color: #a6a6a6;
 }
 
-.opcoes h3 {
+.opcoes .pedido {
     font-weight: 700;
     font-size: 16px;
     color: #333333;
@@ -131,6 +131,17 @@ header {
     font-weight: 700;
     font-size: 16px;
     color: #333333;
+    margin-right: 4px;
+}
+
+.preco .valor {
+    font-weight: 700;
+    font-size: 16px;
+    color: #333333;
+}
+
+.preco{
+    display: flex;
 }
 
 ion-icon {
@@ -161,6 +172,10 @@ ion-icon {
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
 /* FIM DO MAIN-CONTENT */
 
 /*INICIO DO CHECK VERDIN*/
@@ -198,3 +213,101 @@ ion-icon {
     cursor: pointer;
 }
 /* FIM DO CHECK VERDIN*/
+
+/* POP-UP*/
+
+.aparecer {
+    display: flex;
+}
+
+.sumir {
+    display: none;
+}
+
+.pop-up {
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 33;
+    top: 0;
+    width: 415px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.568);
+}
+
+.parte-verde{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-top: 21px;
+    background-color: #3bc060;
+    width: 377px;
+    height: 353px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+
+.parte-verde a {
+    font-family: 'Roboto';
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.parte-verde h6 {
+    font-family: 'Roboto';
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.tudocerto p{
+    color: #ffffff;
+    height: 52px;
+    width: 333px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+
+.tudocerto a{
+    height: 52px;
+    width: 333px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #3bc060;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.i1, .i2, .i3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+    height: 27px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 22px;
+    font-family: 'Roboto';
+}
+
+.valorpagar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+    height: 27px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: 'Roboto';
+}
