@@ -128,10 +128,8 @@ function whatsapp (tudocerto){
     \n - Prato: ${prato}
     \n - Bebida: ${bebida}
     \n - Sobremesa: ${sobremesa}
-    \n Total: R$ ${valorTotal.toFixed(2)}
-
-    \n   Nome: ${nome}
-    \n   Endereço: ${endereco}`
+    \nTotal: R$ ${valorTotal.toFixed(2)}
+    \nNome: ${nome} \nEndereço: ${endereco}`
 
     let textwhats = encodeURIComponent(pedido)
     let linkwhats = "https://wa.me/5583998371434?text=" + textwhats
